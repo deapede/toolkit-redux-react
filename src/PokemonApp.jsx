@@ -22,7 +22,7 @@ export const PokemonApp = () => {
 
       <ul>
         {pokemons.map(({ name }) => (
-          <li key={name}>{name}</li>
+          <li key={name}>{name[0].toUpperCase() + name.substring(1)}</li>
         ))}
       </ul>
 
